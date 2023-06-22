@@ -43,6 +43,8 @@ body {
 .step {
   margin: 0 auto 2rem auto;
   margin-bottom: 25rem;
+  -webkit-transform: translate3d(0,0,0); 
+  z-index: 999;
   background-color: #eee;
   background-color: #fff;
   color: black;
@@ -67,7 +69,7 @@ body {
 }
 
 /* When it's less than 700 pixels wide, do normal scrollytelling */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
   #scrolly.side-by-side {
     display: flex;
   }
