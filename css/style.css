@@ -12,6 +12,10 @@ body {
   float: left;
 }
 
+#mobile {
+  display: none;
+}
+
 #scrolly {
   position: relative;
   padding: 1rem;
@@ -60,18 +64,6 @@ body {
   visibility: hidden;
 }
 
-.header {
-  background-image: url('../Users/U6120756/prinz-stuff/sona-new/assets/cover.png');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-#mobile {
-  display: none;
-}
-
 /* When it's less than 700 pixels wide, do normal scrollytelling */
 @media only screen and (min-width: 600px) {
   #scrolly.side-by-side {
@@ -98,9 +90,9 @@ body {
     flex-grow: 2;
   }
 
-  #desktop {
+  /* #desktop {
     display: none;
-  }
+  } */
 }
 
 /* .strong-republic {
