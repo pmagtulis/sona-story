@@ -68,6 +68,10 @@ body {
   background-attachment: fixed;
 }
 
+#mobile {
+  display: none;
+}
+
 /* When it's less than 700 pixels wide, do normal scrollytelling */
 @media only screen and (min-width: 600px) {
   #scrolly.side-by-side {
@@ -92,6 +96,10 @@ body {
   #scrolly.side-by-side .sticky-thing {
     order: 1;
     flex-grow: 2;
+  }
+
+  #desktop {
+    display: none;
   }
 }
 
