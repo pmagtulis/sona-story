@@ -96,6 +96,8 @@ body {
 
   .bg-image {
     background-image: url('https://pmagtulis.github.io/sona-story/assets/cover-mobile.png');
+    background-size: auto 350px;
+    height: 300px;
   }
 
   /* #desktop {
