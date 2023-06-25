@@ -12,6 +12,18 @@ body {
   float: left;
 }
 
+.government_dek {
+  border-bottom: 2px solid black;
+}
+
+.national_dek {
+  border-bottom: 2px solid black;
+}
+
+.development_dek {
+  border-bottom: 2px solid black;
+}
+
 #mobile {
   display: none;
 }
