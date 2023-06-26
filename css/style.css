@@ -11,20 +11,24 @@ body {
   color: #ffffff;
   text-align: center;
   font-weight: bold;
-  top: 30%;
-  left: 20%;
-  position: absolute;
-  text-shadow: 5px 5px #42a4db;
-  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 1.125;
+  position: relative;
+  background-color: #42a4db;
 }
 
 .subtitle {
-  text-align: left;
+  text-align: center;
   position: absolute;
-  top: 45%;
-  left: 5%;
+  margin: 0 auto;
+  top: 60%;
+  left: 12%;
   color: #ffffff;
   font-size: 35px;
+  background-color: #42a4db;
 }
 
 .first-letter {
@@ -134,5 +138,31 @@ body {
 
 .sticky-thing > .ai2html-container-mobile {
     display: block;
+  }
+
+  .title {
+    font-size: 38px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 1.125;
+    position: relative;
+    text-shadow: 5px 5px #42a4db;
+    
+  }
+
+  .subtitle {
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    top: 55%;
+    left: 12%;
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #42a4db;
   }
 }
