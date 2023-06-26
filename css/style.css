@@ -79,7 +79,7 @@ body {
 .step {
   margin: 0 auto 2rem auto;
   margin-bottom: 25rem;
-  -webkit-transform: translate3d(0,0,0); 
+  -webkit-transform: translate3d(0, 0, 0);
   z-index: 999;
   background-color: #eee;
   background-color: #fff;
@@ -121,22 +121,15 @@ body {
     order: 1;
     flex-grow: 2;
   }
-
-  .bg-image {
-    background-image: url('https://pmagtulis.github.io/sona-story/assets/cover-mobile.png');
-    background-size: auto 350px;
-    height: 300px;
-  }
 }
 
 @media only screen and (max-width: 500px) {
-
-.sticky-thing:first-child {
+  .sticky-thing:first-child {
     display: none;
     height: 0px;
   }
 
-.sticky-thing > .ai2html-container-mobile {
+  .sticky-thing > .ai2html-container-mobile {
     display: block;
   }
 
@@ -162,5 +155,11 @@ body {
     color: #ffffff;
     font-size: 20px;
     background-color: #42a4db;
+  }
+
+  .bg-image {
+    background-image: url('https://pmagtulis.github.io/sona-story/assets/cover-mobile.png');
+    background-size: auto 350px;
+    height: 300px;
   }
 }
