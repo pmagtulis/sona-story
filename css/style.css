@@ -6,25 +6,37 @@ body {
   font: 'Roboto';
 }
 
+.title {
+  font-size: 85px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  top: 30%;
+  left: 20%;
+  position: absolute;
+  text-shadow: 5px 5px #42a4db;
+  
+}
+
+.subtitle {
+  text-align: left;
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  color: #ffffff;
+  font-size: 35px;
+}
+
 .first-letter {
   font-size: 55px;
   line-height: 55px;
   float: left;
 }
-
-.government_dek {
-  border-bottom: 2px solid black;
-}
-
-.national_dek {
-  border-bottom: 2px solid black;
-}
-
-.development_dek {
-  border-bottom: 2px solid black;
-}
-
 #mobile {
+  display: none;
+}
+
+.sticky-thing > .ai2html-container-mobile {
   display: none;
 }
 
@@ -111,12 +123,16 @@ body {
     background-size: auto 350px;
     height: 300px;
   }
-
-  /* #desktop {
-    display: none;
-  } */
 }
 
-/* .strong-republic {
-    border-bottom: 3px ;
-} */
+@media only screen and (max-width: 500px) {
+
+.sticky-thing:first-child {
+    display: none;
+    height: 0px;
+  }
+
+.sticky-thing > .ai2html-container-mobile {
+    display: block;
+  }
+}
