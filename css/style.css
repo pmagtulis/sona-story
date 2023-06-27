@@ -96,6 +96,12 @@ body {
   visibility: hidden;
 }
 
+#footer_img {
+  padding: 0 0 0 0px;
+  margin: 0;
+  overflow: hidden;
+}
+
 /* When it's less than 700 pixels wide, do normal scrollytelling */
 @media only screen and (max-width: 600px) {
   #scrolly.side-by-side {
@@ -120,6 +126,12 @@ body {
   #scrolly.side-by-side .sticky-thing {
     order: 1;
     flex-grow: 2;
+  }
+
+  #footer_img {
+    padding: 0 0 0 0px;
+    margin: 0;
+    overflow: hidden;
   }
 }
 
@@ -161,5 +173,11 @@ body {
     background-image: url('https://pmagtulis.github.io/sona-story/assets/cover-mobile.png');
     background-size: auto 350px;
     height: 300px;
+  }
+
+  #footer_img {
+    padding: 0 0 0 0px;
+    margin: 0;
+    overflow: hidden;
   }
 }
