@@ -97,13 +97,20 @@ body {
 }
 
 #footer_img {
-  padding: 0 0 0 0px;
-  margin: 0;
-  overflow: hidden;
+  margin-left: -20px;
+  margin-right: -20px;
+  /* position:absolute; */
+  align-items: center;
 }
 
-/* When it's less than 700 pixels wide, do normal scrollytelling */
-@media only screen and (max-width: 600px) {
+.footer_container {
+  position: absolute;
+  left: 45%;
+}
+
+/* When it's less than 500 pixels wide, do normal scrollytelling */
+
+@media only screen and (max-width: 500px) {
   #scrolly.side-by-side {
     display: flex;
   }
@@ -131,11 +138,9 @@ body {
   #footer_img {
     padding: 0 0 0 0px;
     margin: 0;
-    overflow: hidden;
+    width: 100%;
   }
-}
 
-@media only screen and (max-width: 500px) {
   .sticky-thing:first-child {
     display: none;
     height: 0px;
@@ -178,6 +183,10 @@ body {
   #footer_img {
     padding: 0 0 0 0px;
     margin: 0;
-    overflow: hidden;
+  }
+
+  .footer_container {
+    position: absolute;
+    left: 30%;
   }
 }
