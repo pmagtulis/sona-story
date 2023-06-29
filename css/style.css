@@ -59,6 +59,10 @@ body {
   height: 30px;
 }
 
+.elite {
+  border-bottom: 4px solid #efc267;
+}
+
 .scrolly-overlay {
   position: relative;
   padding: 0;
@@ -104,8 +108,10 @@ body {
 
 .footer_container {
   position: absolute;
-  right: 45%;
-  left: 45%;
+  display: flex;
+  justify-content: center;
+  margin-right: 45%;
+  margin-left: 45%;
 }
 
 /* When it's less than 500 pixels wide, do normal scrollytelling */
@@ -218,6 +224,10 @@ body {
     background-color: #42a4db;
   }
 
+  .elite {
+    border-bottom: 3px solid #efc267;
+  }
+
   .bg-image {
     background-image: url('https://pmagtulis.github.io/sona-story/assets/cover-mobile.png');
     height: 300px;
@@ -230,5 +240,9 @@ body {
 
   .footer_container {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-right: 25%;
+    margin-left: 25%;
   }
 }
