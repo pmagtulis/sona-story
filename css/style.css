@@ -1,8 +1,5 @@
 html,
 body {
-  /* margin-right: 40px;
-  margin-left: 40px; */
-  /* margin-top: 10px; */
   font: 'Roboto';
 }
 
@@ -21,11 +18,14 @@ body {
 }
 
 .subtitle {
-  text-align: center;
+  text-align: center !important;
+  justify-content: center;
   position: absolute;
-  margin: 0 auto;
+  display: flex;
+  left: 18%;
+  right: 18%;
+  margin-bottom: auto;
   top: 60%;
-  left: 12%;
   color: #ffffff;
   font-size: 35px;
   background-color: #42a4db;
@@ -36,11 +36,12 @@ body {
   line-height: 55px;
   float: left;
 }
-#mobile {
+
+.sticky-thing > .ai2html-container-mobile {
   display: none;
 }
 
-.sticky-thing > .ai2html-container-mobile {
+.sticky-thing > .ai2html-container-medium {
   display: none;
 }
 
@@ -51,6 +52,12 @@ body {
 
 .bg-image {
   background-image: url('https://pmagtulis.github.io/sona-story/assets/cover-for-sona.png');
+}
+
+.footer_image {
+  background-image: url('https://pmagtulis.github.io/sona-story/assets/footer_xl.png');
+  background-size: auto;
+  height: 300px;
 }
 
 .scrolly-overlay {
@@ -97,20 +104,64 @@ body {
 }
 
 #footer_img {
-  margin-left: -20px;
-  margin-right: -20px;
-  /* position:absolute; */
+  position: absolute;
+  display: flex;
   align-items: center;
+  min-width: 100%;
 }
 
 .footer_container {
   position: absolute;
+  right: 45%;
   left: 45%;
 }
 
 /* When it's less than 500 pixels wide, do normal scrollytelling */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) and (min-width: 550px) {
+  .sticky-thing:first-child {
+    display: none;
+    height: 0px;
+  }
+
+  .sticky-thing > .ai2html-container-medium {
+    display: block;
+  }
+
+  #scrolly.side-by-side {
+    display: flex;
+  }
+
+  #scrolly.side-by-side > div {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75em;
+  }
+
+  #scrolly.side-by-side .scrolly-overlay {
+    margin-top: 70vh;
+    order: 0;
+    /* Change these to adjust sizing options */
+    min-width: 15rem;
+    max-width: 20rem;
+  }
+
+  .footer_image {
+    background-image: url('https://pmagtulis.github.io/sona-story/assets/footer_md.png');
+    background-size: auto 720px;
+    height: 300px;
+  }
+
+  #scrolly.side-by-side .sticky-thing {
+    order: 1;
+    flex-grow: 2;
+  }
+}
+
+/* When it's less than 500 pixels wide, do normal scrollytelling */
+
+@media only screen and (max-width: 500px) and (min-width: 300px) {
   #scrolly.side-by-side {
     display: flex;
   }
@@ -141,7 +192,7 @@ body {
     width: 100%;
   }
 
-  .sticky-thing:first-child {
+  .sticky-thing:nth-child(-n + 2) {
     display: none;
     height: 0px;
   }
@@ -165,10 +216,12 @@ body {
 
   .subtitle {
     text-align: center;
+    justify-content: center;
     position: absolute;
     margin: 0 auto;
-    top: 55%;
-    left: 12%;
+    top: 60%;
+    left: 3%;
+    right: 3%;
     color: #ffffff;
     font-size: 20px;
     background-color: #42a4db;
@@ -180,13 +233,23 @@ body {
     height: 300px;
   }
 
+  .footer_image {
+    background-image: url('https://pmagtulis.github.io/sona-story/assets/footer-xs.png');
+    background-size: auto 350px;
+    height: 300px;
+  }
+
   #footer_img {
-    padding: 0 0 0 0px;
-    margin: 0;
+    position: absolute;
+    display: flex;
+    /* align-items: center; */
+    min-width: 100%;
   }
 
   .footer_container {
     position: absolute;
-    left: 30%;
+    justify-content: center;
+    margin-right: 30%;
+    margin-left: 30%;
   }
 }
